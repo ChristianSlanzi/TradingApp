@@ -33,3 +33,19 @@ struct KrakenAPI: KrakenAPIType {
             .eraseToAnyPublisher()
     }
 }
+
+/// IMPROVEMENTS
+///
+/// separate BaseURL
+/// create generic API Request that supports get, put, patch, ....
+/// have an API Request Builder for api methods, for authentication, body parameters of different types, support xform - multiform,
+/// separate the mapping
+/// separate the decoding and inject the decoder
+///
+/// support DATA LAYER UNIT TESTING
+/// have an abstraction for urlsession or dataTaskPublisher
+
+
+/// YAGNI principle ( You Aren't Gonna Need IT) : do something only when it is required
+
+/// TDD : classic example  BuzzFizz: simple game that prints Buzz when number is multiple of 3, Fizz when is multiple of 5, BuzzFizz when is multiple of both
