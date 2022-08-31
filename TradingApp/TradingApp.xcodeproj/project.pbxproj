@@ -17,6 +17,7 @@
 		240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370F828BFCE6A00F13618 /* KrakenAPI.swift */; };
 		240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FB28BFD0F800F13618 /* TradingAssetPair.swift */; };
 		240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FD28BFD51800F13618 /* KrakenRepository.swift */; };
+		2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		240370F828BFCE6A00F13618 /* KrakenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenAPI.swift; sourceTree = "<group>"; };
 		240370FB28BFD0F800F13618 /* TradingAssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetPair.swift; sourceTree = "<group>"; };
 		240370FD28BFD51800F13618 /* KrakenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenRepository.swift; sourceTree = "<group>"; };
+		240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTradingAssetPairsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 		240370F628BFCD0000F13618 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			files = (
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
 				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
+				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
 				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
 				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,
 				240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */,
