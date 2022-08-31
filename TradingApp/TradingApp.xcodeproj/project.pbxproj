@@ -14,6 +14,8 @@
 		240370D628BFCAEE00F13618 /* TradingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370D528BFCAEE00F13618 /* TradingAppTests.swift */; };
 		240370E028BFCAEE00F13618 /* TradingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370DF28BFCAEE00F13618 /* TradingAppUITests.swift */; };
 		240370E228BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */; };
+		240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370F828BFCE6A00F13618 /* KrakenAPI.swift */; };
+		240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FB28BFD0F800F13618 /* TradingAssetPair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		240370DB28BFCAEE00F13618 /* TradingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		240370DF28BFCAEE00F13618 /* TradingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppUITests.swift; sourceTree = "<group>"; };
 		240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		240370F828BFCE6A00F13618 /* KrakenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenAPI.swift; sourceTree = "<group>"; };
+		240370FB28BFD0F800F13618 /* TradingAssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetPair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,11 @@
 		240370C328BFCAEA00F13618 /* TradingApp */ = {
 			isa = PBXGroup;
 			children = (
+				240370F128BFCC4500F13618 /* Utils */,
+				240370EE28BFCC1D00F13618 /* Data */,
+				240370EF28BFCC2F00F13618 /* Domain */,
+				240370F028BFCC3900F13618 /* Presentation */,
+				240370F228BFCC6600F13618 /* Main */,
 				240370C428BFCAEA00F13618 /* TradingAppApp.swift */,
 				240370C628BFCAEA00F13618 /* ContentView.swift */,
 				240370C828BFCAEE00F13618 /* Assets.xcassets */,
@@ -125,6 +134,83 @@
 				240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */,
 			);
 			path = TradingAppUITests;
+			sourceTree = "<group>";
+		};
+		240370EE28BFCC1D00F13618 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				240370F428BFCCDC00F13618 /* Gateways */,
+				240370F328BFCC9500F13618 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		240370EF28BFCC2F00F13618 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				240370F628BFCD0000F13618 /* UseCases */,
+				240370F528BFCCF700F13618 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		240370F028BFCC3900F13618 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				240370F728BFCD2400F13618 /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		240370F128BFCC4500F13618 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		240370F228BFCC6600F13618 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		240370F328BFCC9500F13618 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				240370F828BFCE6A00F13618 /* KrakenAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		240370F428BFCCDC00F13618 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		240370F528BFCCF700F13618 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				240370FB28BFD0F800F13618 /* TradingAssetPair.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		240370F628BFCD0000F13618 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		240370F728BFCD2400F13618 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
+				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
+				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
 				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
