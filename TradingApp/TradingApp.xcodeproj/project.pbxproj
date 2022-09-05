@@ -21,6 +21,9 @@
 		2412484828C660B7002BAFFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484728C660B7002BAFFE /* HomeView.swift */; };
 		2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484928C66108002BAFFE /* HomeViewModel.swift */; };
 		2412484D28C667C1002BAFFE /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484C28C667C1002BAFFE /* ListItem.swift */; };
+		2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */; };
+		2412485128C66F57002BAFFE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485028C66F57002BAFFE /* Assembler.swift */; };
+		2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485228C66FCF002BAFFE /* HomeAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		2412484728C660B7002BAFFE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2412484928C66108002BAFFE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2412484C28C667C1002BAFFE /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCompositionRoot.swift; sourceTree = "<group>"; };
+		2412485028C66F57002BAFFE /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		2412485228C66FCF002BAFFE /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,8 @@
 		240370F228BFCC6600F13618 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */,
+				2412485028C66F57002BAFFE /* Assembler.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			children = (
 				2412484728C660B7002BAFFE /* HomeView.swift */,
 				2412484928C66108002BAFFE /* HomeViewModel.swift */,
+				2412485228C66FCF002BAFFE /* HomeAssembler.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,9 +384,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
+				2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */,
 				2412484828C660B7002BAFFE /* HomeView.swift in Sources */,
 				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
 				2412484D28C667C1002BAFFE /* ListItem.swift in Sources */,
+				2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */,
+				2412485128C66F57002BAFFE /* Assembler.swift in Sources */,
 				2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */,
 				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
 				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,

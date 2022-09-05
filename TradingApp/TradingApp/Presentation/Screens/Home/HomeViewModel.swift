@@ -32,6 +32,7 @@ final class HomeViewModel: ObservableObject {
                     ListItem(keyObject: key, valueObject: value)
                 }
             })
+            .receive(on: RunLoop.main)
             .sink { completion in
                 // TODO
             } receiveValue: { itemsList in
