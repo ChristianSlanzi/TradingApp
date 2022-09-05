@@ -13,6 +13,9 @@ final class AppCompositionRoot {
     static let assembler = DefaultAssembler()
     
     public static var start: some View {
-        return assembler.resolve(HomeView.self)
+        return TabBar(
+            tabProviders: [
+                assembler.resolve(HomeTabViewProvider.self)
+            ])
     }
 }
