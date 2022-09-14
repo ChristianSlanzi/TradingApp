@@ -40,4 +40,8 @@ final class HomeViewModel: ObservableObject {
             }
             .store(in: &cancelBag)
     }
+    
+    // Improvements to hide the model details inside the view model
+    // func getList()
+    // func getListItem()
 }

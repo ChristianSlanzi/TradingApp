@@ -11,8 +11,7 @@ protocol PairDetailsAssembler {
     func resolve(model: TradingAssetPair) -> PairDetailsView
 }
 
-
-extension TemplateAssembler {
+extension PairDetailsAssembler {
     func resolve(model: TradingAssetPair) -> PairDetailsView {
         let vm = PairDetailsViewModel(model: model)
         return PairDetailsView(viewModel: vm)
