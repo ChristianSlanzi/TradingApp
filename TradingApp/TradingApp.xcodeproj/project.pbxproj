@@ -50,6 +50,11 @@
 		2469E7A728D23CD300CADA2B /* PairDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A428D23CD300CADA2B /* PairDetailsView.swift */; };
 		2469E7AA28D247D000CADA2B /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A928D247D000CADA2B /* NavigationDestination.swift */; };
 		2469E7AC28D2481E00CADA2B /* NavigationViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */; };
+		2469E7AE28D24D0B00CADA2B /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7AD28D24D0B00CADA2B /* NavigationDirection.swift */; };
+		2469E7B028D24D7F00CADA2B /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7AF28D24D7F00CADA2B /* NavigationHandler.swift */; };
+		2469E7B328D251F500CADA2B /* ButtonStyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7B228D251F500CADA2B /* ButtonStyleGuide.swift */; };
+		2469E7B528D2520400CADA2B /* ColorStyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7B428D2520300CADA2B /* ColorStyleGuide.swift */; };
+		2469E7B728D2521300CADA2B /* TextGuideStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7B628D2521300CADA2B /* TextGuideStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +121,11 @@
 		2469E7A428D23CD300CADA2B /* PairDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsView.swift; sourceTree = "<group>"; };
 		2469E7A928D247D000CADA2B /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewFactory.swift; sourceTree = "<group>"; };
+		2469E7AD28D24D0B00CADA2B /* NavigationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDirection.swift; sourceTree = "<group>"; };
+		2469E7AF28D24D7F00CADA2B /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		2469E7B228D251F500CADA2B /* ButtonStyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleGuide.swift; sourceTree = "<group>"; };
+		2469E7B428D2520300CADA2B /* ColorStyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyleGuide.swift; sourceTree = "<group>"; };
+		2469E7B628D2521300CADA2B /* TextGuideStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuideStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,7 @@
 		240370F028BFCC3900F13618 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2469E7B128D251D700CADA2B /* Style */,
 				2412485428C67500002BAFFE /* Components */,
 				2412484B28C667A6002BAFFE /* Utils */,
 				240370F728BFCD2400F13618 /* Screens */,
@@ -391,8 +402,20 @@
 			children = (
 				2469E7A928D247D000CADA2B /* NavigationDestination.swift */,
 				2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */,
+				2469E7AD28D24D0B00CADA2B /* NavigationDirection.swift */,
+				2469E7AF28D24D7F00CADA2B /* NavigationHandler.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2469E7B128D251D700CADA2B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				2469E7B228D251F500CADA2B /* ButtonStyleGuide.swift */,
+				2469E7B428D2520300CADA2B /* ColorStyleGuide.swift */,
+				2469E7B628D2521300CADA2B /* TextGuideStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2469E7B028D24D7F00CADA2B /* NavigationHandler.swift in Sources */,
 				2469E79A28D1E59000CADA2B /* TradeViewModel.swift in Sources */,
 				2469E79B28D1E59000CADA2B /* BalancesAssembler.swift in Sources */,
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
@@ -540,10 +564,13 @@
 				2412484D28C667C1002BAFFE /* ListItem.swift in Sources */,
 				2469E79628D1E59000CADA2B /* AccountView.swift in Sources */,
 				2469E79F28D1E59000CADA2B /* TemplateAssembler.swift in Sources */,
+				2469E7B528D2520400CADA2B /* ColorStyleGuide.swift in Sources */,
 				2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */,
+				2469E7B328D251F500CADA2B /* ButtonStyleGuide.swift in Sources */,
 				2469E79828D1E59000CADA2B /* TradeAssembler.swift in Sources */,
 				2469E79E28D1E59000CADA2B /* TemplateView.swift in Sources */,
 				2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */,
+				2469E7AE28D24D0B00CADA2B /* NavigationDirection.swift in Sources */,
 				2412485128C66F57002BAFFE /* Assembler.swift in Sources */,
 				2469E79728D1E59000CADA2B /* AccountAssembler.swift in Sources */,
 				2469E7A028D1E59000CADA2B /* TemplateViewModel.swift in Sources */,
@@ -559,6 +586,7 @@
 				2469E79928D1E59000CADA2B /* TradeView.swift in Sources */,
 				2469E79528D1E59000CADA2B /* AccountViewModel.swift in Sources */,
 				2469E77B28D1DAB900CADA2B /* Ticker.swift in Sources */,
+				2469E7B728D2521300CADA2B /* TextGuideStyle.swift in Sources */,
 				2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */,
 				2469E78228D1E2BA00CADA2B /* LoadTickerUseCase.swift in Sources */,
 				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,

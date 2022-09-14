@@ -10,6 +10,8 @@ import Combine
 
 final class HomeViewModel: ObservableObject {
     
+    @Published var navigationDirection: NavigationDirection?
+    
     public let pairsCase: LoadTradingAssetPairsUseCaseType
     
     // Output
