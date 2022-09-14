@@ -12,9 +12,15 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     
     var body: some View {
-        List(viewModel.myLyst, id: \.self) { listItem in
-            let pair: TradingAssetPair = listItem.valueObject
-            Text(pair.altname)
+        NavigationView {
+            List(viewModel.myLyst, id: \.self) { listItem in
+                let pair: TradingAssetPair = listItem.valueObject
+                NavigationLink {
+                    PairDetailsView(viewModel: PairDetailsViewModel(model: pair))
+                } label: {
+                    Text(pair.altname)
+                }
+            }
         }
     }
 }

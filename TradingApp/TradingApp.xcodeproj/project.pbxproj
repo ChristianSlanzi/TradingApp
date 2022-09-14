@@ -45,6 +45,9 @@
 		2469E79E28D1E59000CADA2B /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79228D1E59000CADA2B /* TemplateView.swift */; };
 		2469E79F28D1E59000CADA2B /* TemplateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79328D1E59000CADA2B /* TemplateAssembler.swift */; };
 		2469E7A028D1E59000CADA2B /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79428D1E59000CADA2B /* TemplateViewModel.swift */; };
+		2469E7A528D23CD300CADA2B /* PairDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A228D23CD300CADA2B /* PairDetailsViewModel.swift */; };
+		2469E7A628D23CD300CADA2B /* PairDetailsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A328D23CD300CADA2B /* PairDetailsAssembler.swift */; };
+		2469E7A728D23CD300CADA2B /* PairDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A428D23CD300CADA2B /* PairDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		2469E79228D1E59000CADA2B /* TemplateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		2469E79328D1E59000CADA2B /* TemplateAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateAssembler.swift; sourceTree = "<group>"; };
 		2469E79428D1E59000CADA2B /* TemplateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
+		2469E7A228D23CD300CADA2B /* PairDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsViewModel.swift; sourceTree = "<group>"; };
+		2469E7A328D23CD300CADA2B /* PairDetailsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsAssembler.swift; sourceTree = "<group>"; };
+		2469E7A428D23CD300CADA2B /* PairDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +284,7 @@
 		240370F728BFCD2400F13618 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2469E7A128D23C7800CADA2B /* PairDetails */,
 				2469E78528D1E59000CADA2B /* Account */,
 				2469E78D28D1E59000CADA2B /* Balances */,
 				2469E79128D1E59000CADA2B /* Template */,
@@ -362,6 +369,16 @@
 				2469E79428D1E59000CADA2B /* TemplateViewModel.swift */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		2469E7A128D23C7800CADA2B /* PairDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2469E7A328D23CD300CADA2B /* PairDetailsAssembler.swift */,
+				2469E7A428D23CD300CADA2B /* PairDetailsView.swift */,
+				2469E7A228D23CD300CADA2B /* PairDetailsViewModel.swift */,
+			);
+			path = PairDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +516,7 @@
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
 				2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */,
 				2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */,
+				2469E7A728D23CD300CADA2B /* PairDetailsView.swift in Sources */,
 				2469E78028D1E1E600CADA2B /* URL+Ext.swift in Sources */,
 				2469E78428D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift in Sources */,
 				2469E79D28D1E59000CADA2B /* BalancesViewModel.swift in Sources */,
@@ -517,7 +535,9 @@
 				2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */,
 				2469E77D28D1E16600CADA2B /* TickData.swift in Sources */,
 				2469E79C28D1E59000CADA2B /* BalancesView.swift in Sources */,
+				2469E7A528D23CD300CADA2B /* PairDetailsViewModel.swift in Sources */,
 				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
+				2469E7A628D23CD300CADA2B /* PairDetailsAssembler.swift in Sources */,
 				2412485628C6752C002BAFFE /* TabBar.swift in Sources */,
 				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
 				2469E79928D1E59000CADA2B /* TradeView.swift in Sources */,
