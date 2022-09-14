@@ -48,6 +48,8 @@
 		2469E7A528D23CD300CADA2B /* PairDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A228D23CD300CADA2B /* PairDetailsViewModel.swift */; };
 		2469E7A628D23CD300CADA2B /* PairDetailsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A328D23CD300CADA2B /* PairDetailsAssembler.swift */; };
 		2469E7A728D23CD300CADA2B /* PairDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A428D23CD300CADA2B /* PairDetailsView.swift */; };
+		2469E7AA28D247D000CADA2B /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7A928D247D000CADA2B /* NavigationDestination.swift */; };
+		2469E7AC28D2481E00CADA2B /* NavigationViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		2469E7A228D23CD300CADA2B /* PairDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsViewModel.swift; sourceTree = "<group>"; };
 		2469E7A328D23CD300CADA2B /* PairDetailsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsAssembler.swift; sourceTree = "<group>"; };
 		2469E7A428D23CD300CADA2B /* PairDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDetailsView.swift; sourceTree = "<group>"; };
+		2469E7A928D247D000CADA2B /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
+		2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,7 @@
 		240370F228BFCC6600F13618 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2469E7A828D246DF00CADA2B /* Navigation */,
 				2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */,
 				2412485028C66F57002BAFFE /* Assembler.swift */,
 			);
@@ -381,6 +386,15 @@
 			path = PairDetails;
 			sourceTree = "<group>";
 		};
+		2469E7A828D246DF00CADA2B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2469E7A928D247D000CADA2B /* NavigationDestination.swift */,
+				2469E7AB28D2481E00CADA2B /* NavigationViewFactory.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,6 +532,7 @@
 				2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */,
 				2469E7A728D23CD300CADA2B /* PairDetailsView.swift in Sources */,
 				2469E78028D1E1E600CADA2B /* URL+Ext.swift in Sources */,
+				2469E7AC28D2481E00CADA2B /* NavigationViewFactory.swift in Sources */,
 				2469E78428D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift in Sources */,
 				2469E79D28D1E59000CADA2B /* BalancesViewModel.swift in Sources */,
 				2412484828C660B7002BAFFE /* HomeView.swift in Sources */,
@@ -533,6 +548,7 @@
 				2469E79728D1E59000CADA2B /* AccountAssembler.swift in Sources */,
 				2469E7A028D1E59000CADA2B /* TemplateViewModel.swift in Sources */,
 				2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */,
+				2469E7AA28D247D000CADA2B /* NavigationDestination.swift in Sources */,
 				2469E77D28D1E16600CADA2B /* TickData.swift in Sources */,
 				2469E79C28D1E59000CADA2B /* BalancesView.swift in Sources */,
 				2469E7A528D23CD300CADA2B /* PairDetailsViewModel.swift in Sources */,

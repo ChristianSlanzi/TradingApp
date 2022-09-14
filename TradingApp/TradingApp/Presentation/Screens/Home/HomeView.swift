@@ -16,7 +16,7 @@ struct HomeView: View {
             List(viewModel.myLyst, id: \.self) { listItem in
                 let pair: TradingAssetPair = listItem.valueObject
                 NavigationLink {
-                    DefaultAssembler().resolve(model: pair)
+                    NavigationViewFactory().makeView(.pairDetails(model: pair))
                 } label: {
                     Text(pair.altname)
                 }
